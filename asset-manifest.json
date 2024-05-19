@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "./static/css/main.5a6d08c7.css",
+    "main.js": "./static/js/main.01330b94.js",
+    "static/js/787.bff22d74.chunk.js": "./static/js/787.bff22d74.chunk.js",
+    "static/media/pokeball.jpeg": "./static/media/pokeball.f162032c3ac3592ed8aa.jpeg",
+    "static/media/ondine.png": "./static/media/ondine.792fe0e826b61bf21331.png",
+    "static/media/tangela.svg": "./static/media/tangela.bbb2a41c49ea2ae7f918975752df5125.svg",
+    "static/media/scyther.svg": "./static/media/scyther.6d40bb3c24dd108d3d6077c0b6b113b3.svg",
+    "static/media/venonat.svg": "./static/media/venonat.7a685814effe4867eb87432c2bac88c9.svg",
+    "static/media/hitmonlee.svg": "./static/media/hitmonlee.a49722af3395ea9ae00145604ce12d51.svg",
+    "static/media/krabby.svg": "./static/media/krabby.058adc883a374b34404109296ae2c76f.svg",
+    "static/media/gastly.svg": "./static/media/gastly.696da9f34a48f971d96db98d475b22a3.svg",
+    "static/media/paras.svg": "./static/media/paras.3104af1f0e85c3d51bac55ebc6d03e00.svg",
+    "static/media/cubone.svg": "./static/media/cubone.1d7ce3434404948d36bc19cd6654add2.svg",
+    "static/media/vulpix.svg": "./static/media/vulpix.a18d5d9f4681e3c294083768ea68f6d0.svg",
+    "static/media/hitmonchan.svg": "./static/media/hitmonchan.1bc5fb99b560f181614fbf6e0998952d.svg",
+    "static/media/pr-chen.jpeg": "./static/media/pr-chen.97d9aa0b048c02cbfb5a.jpeg",
+    "static/media/caterpie.svg": "./static/media/caterpie.e0a4cb299829f1610cb474ac338065ce.svg",
+    "static/media/jigglypuff.svg": "./static/media/jigglypuff.768b246d820e906767a04089476bc39d.svg",
+    "static/media/poliwag.svg": "./static/media/poliwag.c869265d2c56d602f68b0005fa214ded.svg",
+    "static/media/dratini.svg": "./static/media/dratini.30b58045955ae8f1a5a7c8125a5427c0.svg",
+    "static/media/chansey.svg": "./static/media/chansey.d5a52b6f6de87d394d98e8757697ff00.svg",
+    "static/media/bellsprout.svg": "./static/media/bellsprout.3b0a8ec0de68f572fa7fb66d3f8ec033.svg",
+    "static/media/oddish.svg": "./static/media/oddish.32aa243ab38fa904382523c106ea3665.svg",
+    "index.html": "./index.html",
+    "main.5a6d08c7.css.map": "./static/css/main.5a6d08c7.css.map",
+    "main.01330b94.js.map": "./static/js/main.01330b94.js.map",
+    "787.bff22d74.chunk.js.map": "./static/js/787.bff22d74.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a6d08c7.css",
+    "static/js/main.01330b94.js"
+  ]
+}
