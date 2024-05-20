@@ -1,4 +1,11 @@
-import React, { Dispatch, SetStateAction, useEffect, useRef } from "react";
+import React, {
+    ChangeEvent,
+    Dispatch,
+    SetStateAction,
+    useEffect,
+    useRef,
+    useState,
+} from "react";
 import Divider from "components/common/Divider/Divider";
 import { TEAM_MEMBERS } from "../../constants";
 import "./Header.scss";
@@ -9,6 +16,9 @@ interface IHeaderProps {
 }
 
 export const Header: React.FC<IHeaderProps> = (props) => {
+    const [prompt, setPrompt] = useState(
+        "I think that Morbier is the best cheese in the world."
+    );
     const headerRef = useRef<HTMLElement>(null);
 
     const resetPositions = () => {
@@ -30,6 +40,10 @@ export const Header: React.FC<IHeaderProps> = (props) => {
         });
     };
 
+    const onInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+        setPrompt(e.target.value);
+    };
+
     useEffect(() => {
         if (headerRef.current) {
             props.setHeaderHeight(headerRef.current?.clientHeight);
@@ -46,9 +60,7 @@ export const Header: React.FC<IHeaderProps> = (props) => {
                 <div className="tag-line-decoration right" />
             </div>
 
-            <h1 className="typeface-primary">
-                I think that Morbier is the best cheese in the world.
-            </h1>
+            <input value={prompt} onChange={onInputChange} />
             <Divider />
             <button onClick={resetPositions} className="reset-positions-button">
                 RESET
