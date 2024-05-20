@@ -14,7 +14,10 @@ const Home: FC<IHomeProps> = (props) => {
             <Arena />
             <div className={styles["team-members-container"]}>
                 {TEAM_MEMBERS.map((line) => (
-                    <div className={styles["team-members-line"]}>
+                    <div
+                        className={styles["team-members-line"]}
+                        key={line[0].color}
+                    >
                         {line.map((member) => (
                             <TeamMember key={member.name} teamMember={member} />
                         ))}

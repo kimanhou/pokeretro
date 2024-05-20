@@ -33,7 +33,7 @@ const Arena: FC = (props) => {
             onDragOver={(e: DragEvent<HTMLDivElement>) => e.preventDefault()}
             onDrop={drop}
         >
-            <svg viewBox="0 0 540 540" style={{ maxWidth: "540px" }}>
+            <svg viewBox="0 0 540 540" className={styles["arena-svg"]}>
                 <defs>
                     <pattern
                         id="pokeball"
@@ -61,10 +61,7 @@ const Arena: FC = (props) => {
                 />
                 <text
                     width="500"
-                    style={{
-                        transform: "rotate(-78deg)",
-                        transformOrigin: "center",
-                    }}
+                    className={`${styles["orbit-text"]} ${styles["orbit-text-strongly-disagree"]}`}
                 >
                     <textPath
                         xlinkHref="#orbit-strongly-disagree"
@@ -81,10 +78,7 @@ const Arena: FC = (props) => {
                 />
                 <text
                     width="500"
-                    style={{
-                        transform: "rotate(-82deg)",
-                        transformOrigin: "center",
-                    }}
+                    className={`${styles["orbit-text"]} ${styles["orbit-text-disagree"]}`}
                 >
                     <textPath
                         xlinkHref="#orbit-disagree"
@@ -101,10 +95,7 @@ const Arena: FC = (props) => {
                 />
                 <text
                     width="500"
-                    style={{
-                        transform: "rotate(-79deg)",
-                        transformOrigin: "center",
-                    }}
+                    className={`${styles["orbit-text"]} ${styles["orbit-text-not-sure"]}`}
                 >
                     <textPath
                         xlinkHref="#orbit-not-sure"
@@ -121,10 +112,7 @@ const Arena: FC = (props) => {
                 />
                 <text
                     width="500"
-                    style={{
-                        transform: "rotate(-80deg)",
-                        transformOrigin: "center",
-                    }}
+                    className={`${styles["orbit-text"]} ${styles["orbit-text-agree"]}`}
                 >
                     <textPath
                         xlinkHref="#orbit-agree"
@@ -137,13 +125,10 @@ const Arena: FC = (props) => {
                     cx="270"
                     cy="270"
                     r="50"
-                    stroke-width="1px"
+                    strokeWidth="1px"
                     stroke="#333333"
                     fill="url(#pokeball)"
-                    style={{
-                        transform: "rotate(30deg)",
-                        transformOrigin: "center",
-                    }}
+                    className={styles["center"]}
                 />
             </svg>
         </div>
