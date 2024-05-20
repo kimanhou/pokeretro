@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.8700e1cc.css",
-    "main.js": "./static/js/main.0bc079ce.js",
+    "main.css": "./static/css/main.30b0276f.css",
+    "main.js": "./static/js/main.3f291ad0.js",
     "static/js/787.bff22d74.chunk.js": "./static/js/787.bff22d74.chunk.js",
     "static/media/pokeball.jpeg": "./static/media/pokeball.f162032c3ac3592ed8aa.jpeg",
     "static/media/ondine.png": "./static/media/ondine.792fe0e826b61bf21331.png",
@@ -24,12 +24,12 @@
     "static/media/bellsprout.svg": "./static/media/bellsprout.3b0a8ec0de68f572fa7fb66d3f8ec033.svg",
     "static/media/oddish.svg": "./static/media/oddish.32aa243ab38fa904382523c106ea3665.svg",
     "index.html": "./index.html",
-    "main.8700e1cc.css.map": "./static/css/main.8700e1cc.css.map",
-    "main.0bc079ce.js.map": "./static/js/main.0bc079ce.js.map",
+    "main.30b0276f.css.map": "./static/css/main.30b0276f.css.map",
+    "main.3f291ad0.js.map": "./static/js/main.3f291ad0.js.map",
     "787.bff22d74.chunk.js.map": "./static/js/787.bff22d74.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8700e1cc.css",
-    "static/js/main.0bc079ce.js"
+    "static/css/main.30b0276f.css",
+    "static/js/main.3f291ad0.js"
   ]
 }
