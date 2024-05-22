@@ -1,4 +1,5 @@
-import { TeamMemberType } from "types";
+import { TeamMemberType, TeamType } from "types";
+import logo2 from "assets/logo-2.jpeg";
 import jigglypuff from "assets/jigglypuff.svg";
 import gastly from "assets/gastly.svg";
 import oddish from "assets/oddish.svg";
@@ -9,13 +10,10 @@ import paras from "assets/paras.svg";
 import krabby from "assets/krabby.svg";
 import poliwag from "assets/poliwag.svg";
 import dratini from "assets/dratini.svg";
-import bellsprout from "assets/bellsprout.svg";
-import scyther from "assets/scyther.svg";
 import chansey from "assets/chansey.svg";
 import prChen from "assets/pr-chen.jpeg";
 import ondine from "assets/ondine.png";
 import pierre from "assets/pierre.jpeg";
-import caterpie from "assets/caterpie.svg";
 import cubone from "assets/cubone.svg";
 import hitmonlee from "assets/hitmonlee.svg";
 import hitmonchan from "assets/hitmonchan.svg";
@@ -32,53 +30,21 @@ const TEAM_COLORS = {
     SEVEN: "#e1dad4",
 };
 
-export const TEAM_MEMBERS: TeamMemberType[][] = [
+const TEAM_MEMBERS: TeamMemberType[][] = [
     [
-        {
-            color: TEAM_COLORS.ONE,
-            name: "Jade",
-            avatar: jigglypuff,
-        },
-        {
-            color: TEAM_COLORS.ONE,
-            name: "Gabriel",
-            avatar: chansey,
-        },
+        { color: TEAM_COLORS.ONE, name: "Jade", avatar: jigglypuff },
+        { color: TEAM_COLORS.ONE, name: "Gabriel", avatar: chansey },
+        { color: TEAM_COLORS.ONE, name: "Alban", avatar: venonat },
     ],
     [
         { color: TEAM_COLORS.TWO, name: "Léo", avatar: gastly },
-        {
-            color: TEAM_COLORS.TWO_THREE,
-            name: "Louise",
-            avatar: venonat,
-        },
-        {
-            color: TEAM_COLORS.TWO_THREE,
-            name: "Raphaël",
-            avatar: tangela,
-        },
+        { color: TEAM_COLORS.TWO, name: "Raphaël", avatar: tangela },
+        { color: TEAM_COLORS.TWO, name: "Louis", avatar: dratini },
     ],
     [
-        { color: TEAM_COLORS.THREE, name: "Maël", avatar: poliwag },
-        { color: TEAM_COLORS.THREE, name: "Louis", avatar: dratini },
-        { color: TEAM_COLORS.THREE, name: "Ambre", avatar: oddish },
-    ],
-    [
-        {
-            color: TEAM_COLORS.TWO_FIVE,
-            name: "Jules",
-            avatar: bellsprout,
-        },
-        {
-            color: TEAM_COLORS.TWO_FIVE,
-            name: "Arthur",
-            avatar: scyther,
-        },
-        {
-            color: TEAM_COLORS.TWO_FIVE,
-            name: "Adam",
-            avatar: caterpie,
-        },
+        { color: TEAM_COLORS.TWO, name: "Maël", avatar: poliwag },
+        { color: TEAM_COLORS.TWO, name: "Louis", avatar: dratini },
+        { color: TEAM_COLORS.TWO, name: "Ambre", avatar: oddish },
     ],
     [
         { color: TEAM_COLORS.FOUR, name: "Alba", avatar: vulpix },
@@ -96,3 +62,9 @@ export const TEAM_MEMBERS: TeamMemberType[][] = [
         { color: TEAM_COLORS.SEVEN, name: "Thomas", avatar: prChen },
     ],
 ];
+
+export const TEAM_2: TeamType = {
+    name: "Team 2",
+    members: TEAM_MEMBERS,
+    logoSrc: logo2,
+};

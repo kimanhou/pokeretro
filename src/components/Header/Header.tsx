@@ -1,18 +1,11 @@
-import React, {
-    ChangeEvent,
-    Dispatch,
-    SetStateAction,
-    useEffect,
-    useRef,
-    useState,
-} from "react";
+import React, { ChangeEvent, useRef, useState } from "react";
 import Divider from "components/common/Divider/Divider";
-import { TEAM_MEMBERS } from "../../constants";
 import "./Header.scss";
 import { formatName } from "ts/utils";
+import { TeamType } from "types";
 
 interface IHeaderProps {
-    setHeaderHeight: Dispatch<SetStateAction<number>>;
+    team: TeamType;
 }
 
 export const Header: React.FC<IHeaderProps> = (props) => {
@@ -22,9 +15,9 @@ export const Header: React.FC<IHeaderProps> = (props) => {
     const headerRef = useRef<HTMLElement>(null);
 
     const resetPositions = () => {
-        const gamePieceIds = TEAM_MEMBERS.map((line) =>
-            line.map((t) => `game-piece-${formatName(t.name)}`)
-        ).flat();
+        const gamePieceIds = props.team.members
+            .map((line) => line.map((t) => `game-piece-${formatName(t.name)}`))
+            .flat();
 
         gamePieceIds.forEach((id) => {
             const element = document.getElementById(id);
@@ -44,18 +37,12 @@ export const Header: React.FC<IHeaderProps> = (props) => {
         setPrompt(e.target.value);
     };
 
-    useEffect(() => {
-        if (headerRef.current) {
-            props.setHeaderHeight(headerRef.current?.clientHeight);
-        }
-    }, []);
-
     return (
         <header className="flex-column" ref={headerRef}>
             <div className="tag-line flex-row align-items-center">
                 <div className="tag-line-decoration left" />
                 <h4>
-                    <i>Sprint Retro</i>
+                    <i>{props.team.name} Sprint Retro</i>
                 </h4>
                 <div className="tag-line-decoration right" />
             </div>

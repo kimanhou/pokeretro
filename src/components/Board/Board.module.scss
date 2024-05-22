@@ -1,0 +1,16 @@
+div.board {
+    display: flex;
+    gap: 40px;
+    .team-members-container {
+        // border: solid 1px var(--color-light-grey);
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 10px;
+        border-radius: 12px;
+        > div.team-members-line {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+    }
+}

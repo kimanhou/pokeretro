@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { ToastNotificationEnum } from "ts/enum";
+import { ToastNotificationEnum } from "components/ToastNotification/enum";
 import styles from "./Toast.module.scss";
 import {
     AUTO_CLOSE_DURATION,

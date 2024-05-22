@@ -1,7 +1,6 @@
 import { LatLngExpression } from "leaflet";
 import { FieldType } from "./deserialization/FieldType";
 import JsonDeserializationHelper from "./deserialization/JsonDeserializationHelper";
-import { StayEnum } from "ts/enum";
 
 export default class FoodPlace {
     id: number;
@@ -16,7 +15,7 @@ export default class FoodPlace {
     instagram?: string;
     website?: string;
     coordinates?: LatLngExpression;
-    stayType?: StayEnum;
+    stayType?: string;
 
     constructor(
         id: number,
@@ -31,7 +30,7 @@ export default class FoodPlace {
         instagram?: string,
         website?: string,
         coordinates?: LatLngExpression,
-        stayType?: StayEnum
+        stayType?: string
     ) {
         this.id = id;
         this.name = name;
@@ -118,7 +117,7 @@ export default class FoodPlace {
             "stayType",
             FieldType.STRING,
             undefined
-        ) as StayEnum | undefined;
+        );
 
         return new FoodPlace(
             id,

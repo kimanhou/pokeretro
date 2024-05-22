@@ -1,4 +1,4 @@
-import City from "../model/City";
+import City from "model/City";
 import { createFoodPlaceApi } from "./FoodPlaceApi";
 
 export class FoodPlaceController {

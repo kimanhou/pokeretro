@@ -1,16 +1,19 @@
 div.home {
     display: flex;
-    gap: 40px;
-    .team-members-container {
-        // border: solid 1px var(--color-light-grey);
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 50px); // 100vh - footer
+    h1 {
+        text-transform: uppercase;
+        margin-block: 0;
+    }
+    h2 {
+        font-weight: normal;
+    }
+    > div.team-selection-container {
         display: flex;
-        flex-flow: column nowrap;
-        gap: 10px;
-        border-radius: 12px;
-        > div.team-members-line {
-            display: flex;
-            gap: 10px;
-            justify-content: flex-end;
-        }
+        justify-content: center;
+        gap: 100px;
+        margin-top: 60px;
     }
 }

@@ -3,3 +3,9 @@ export type TeamMemberType = {
     name: string;
     avatar?: string;
 };
+
+export type TeamType = {
+    name: string;
+    members: TeamMemberType[][];
+    logoSrc: string;
+};

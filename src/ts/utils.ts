@@ -1,5 +1,3 @@
-import { CityEnum } from "./enum";
-
 export const getValueOrDefault = (s: string | null | undefined) => {
     if (!s) {
         return "";
@@ -16,9 +14,14 @@ export const scrollTo = ({ elementId }: { elementId: string }) => {
 };
 
 export const formatName = (name: string) => {
-    return name
+    const formatted = name
+        // eslint-disable-next-line
         .replaceAll(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "")
+        // eslint-disable-next-line
         .replaceAll(/'/g, "")
+        // eslint-disable-next-line
         .replaceAll(/\s+/g, "-")
         .toLocaleLowerCase();
+
+    return formatted;
 };
